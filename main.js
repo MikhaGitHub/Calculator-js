@@ -1,36 +1,44 @@
-let form = document.getElementById('form-numbers');
-let value_1, value_2;
-let result = document.getElementById('result');
+function addition() {
+    const number_1 = document.getElementById("form1");
+    const number_2 = document.getElementById("form2");
+    value_1 = parseInt(number_1.value);
+    value_2 = parseInt(number_2.value);
 
-function updateValues() {
-    value_1 = parseFloat(form.form1.value) || 0;
-    value_2 = parseFloat(form.form2.value) || 0;
-}
 
-window.addition = function() {
-    updateValues();
-    let sum = value_1 + value_2;
-    console.log(value_1 + value_2);
-    result.value = sum;
+    result_form_id = document.getElementById("result");
+    result_form_id.innerHTML = value_1 + value_2;
 };
 
-window.subtraction = function() {
-    updateValues();
-    let difference = value_1 - value_2;
-    console.log(value_1 - value_2);
-    result.value = difference;
+
+function subtraction() {
+    const number_1 = document.getElementById("form1");
+    const number_2 = document.getElementById("form2");
+    value_1 = parseInt(number_1.value);
+    value_2 = parseInt(number_2.value);
+
+
+    result_form_id = document.getElementById("result");
+    result_form_id.innerHTML = value_1 - value_2;
 };
 
-window.multiplication = function() {
-    updateValues();
-    console.log(value_1 * value_2);
-    let product = value_1 * value_2;
-    result.value = product;
+function multiplication() {
+    const number_1 = document.getElementById("form1");
+    const number_2 = document.getElementById("form2");
+    value_1 = parseInt(number_1.value);
+    value_2 = parseInt(number_2.value);
+
+
+    result_form_id = document.getElementById("result");
+    result_form_id.innerHTML = value_1 * value_2;
 };
 
-window.division = function() {
-    updateValues();
-    console.log(value_1 / value_2);
-    let quotient = value_1 / value_2;
-    result.value = quotient;
+function division() {
+    const number_1 = document.getElementById("form1");
+    const number_2 = document.getElementById("form2");
+    value_1 = parseInt(number_1.value);
+    value_2 = parseInt(number_2.value);
+
+
+    result_form_id = document.getElementById("result");
+    result_form_id.innerHTML = value_1 / value_2;
 };
