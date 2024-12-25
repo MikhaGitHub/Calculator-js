@@ -24,18 +24,18 @@ function calculate(operation) {
     resultElement.textContent = result; // Лучше использовать textContent вместо innerHTML для безопасности и производительности
   }
   
-  function addition() {
-    calculate('+');
-  }
+function addition() {
+  calculate('+');
+}
   
-  function subtraction() {
-    calculate('-');
-  }
+function subtraction() {
+  calculate('-');
+}
   
-  function multiplication() {
-    calculate('*');
-  }
+function multiplication() {
+  calculate('*');
+}
   
-  function division() {
-    calculate('/');
-  } 
+function division() {
+  calculate('/');
+} 
