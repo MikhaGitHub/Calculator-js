@@ -38,4 +38,4 @@ function calculate(operation) {
   
   function division() {
     calculate('/');
-  }  
+  } 
